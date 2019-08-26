@@ -1,7 +1,7 @@
 # WbLS_analysis
 Script collection for analyzing the one ton detector
 
-1. Read_MultipleFiles_WriteTree_v9.py [Analyzing the raw data files]
+1. Read_MultipleFiles_WriteTree_v9.py [Process the raw data files]
 
 -> Raw data files are in .h5 format, and are zipped in .zip files
 -> Raw data files include:
@@ -22,3 +22,10 @@ Script collection for analyzing the one ton detector
 
 -> also a text file listing the raw data file names is necessary
 
+-> the results are saved in ROOT Trees
+
+2. Read_Tree_makePlots_v16_allTrigCombinations.C [Read the ROOT Trees, do further analysis, and make plots.]
+
+-> ROOT tree file names are listed in a text file, this is a must input
+
+-> PMTs are calibrated by groups of every 2~3 days of data, calibration for spe charge (in ADC unit) is listed in Oneton_PMTCalibration_forInput_20190122.txt.
